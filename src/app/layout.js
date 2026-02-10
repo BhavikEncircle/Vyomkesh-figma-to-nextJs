@@ -1,14 +1,17 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Cormorant_Garamond, Poppins } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-cormorant", // Heading font
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const poppins = Poppins({
   subsets: ["latin"],
+  weight: ["300", "400", "500"],
+  variable: "--font-poppins", // Body font
 });
 
 export const metadata = {
@@ -18,12 +21,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+    <html lang="en" className={`${cormorant.variable} ${poppins.variable}`}>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }
