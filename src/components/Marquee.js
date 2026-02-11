@@ -2,8 +2,8 @@ import React from "react";
 
 function Marquee() {
   return (
-    <div className="bg-secondary overflow-hidden whitespace-nowrap py-2">
-      <div className="flex w-max animate-marquee items-center gap-20 text-xs text-white font-poppins">
+    <div className="bg-secondary overflow-hidden whitespace-nowrap py-4">
+      <div className="flex w-max animate-marquee items-center gap-20 text-md text-white font-poppins">
         <div className="flex gap-20 items-center">
           <span>
             🌼 Begin Your Herbal Hair Journey with Vyomkesh – Shine the Natural

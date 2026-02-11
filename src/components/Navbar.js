@@ -14,13 +14,13 @@ function Navbar() {
 
   return (
     <section className="relative bg-white z-50">
-      <div className="flex justify-between items-center px-6 md:px-24 py-3 text-xs font-poppins">
+      <div className="flex justify-between items-center px-6 md:px-34 py-6  font-poppins">
         <div className="logo">
-          <Image src="/Logo.png" alt="logo" width={150} height={150} />
+          <Image src="/Logo.png" alt="logo" width={250} height={250} />
         </div>
 
         <div className="links hidden md:block">
-          <ul className="flex gap-8 tracking-tight font-medium">
+          <ul className="flex gap-8 tracking-tight font-medium text-lg">
             <li>Home</li>
             <li className="flex items-center gap-2">
               Shop
@@ -32,19 +32,19 @@ function Navbar() {
         </div>
 
         <div className="icons flex gap-2 items-center">
-          <div className="bg-secondary p-1 text-lg rounded-full text-white cursor-pointer">
+          <div className="bg-secondary p-2  text-lg rounded-full text-white cursor-pointer">
             <CiSearch />
           </div>
 
-          <div className="bg-secondary p-1 text-lg rounded-full text-white cursor-pointer">
+          <div className="bg-secondary p-2  text-lg rounded-full text-white cursor-pointer">
             <RiShoppingBagLine />
           </div>
 
-          <div className="hidden sm:block bg-secondary p-1 text-lg rounded-full text-white cursor-pointer">
+          <div className="hidden sm:block bg-secondary p-2  text-lg rounded-full text-white cursor-pointer">
             <AiOutlineUser />
           </div>
 
-          <div className="hidden sm:block bg-secondary p-1 text-lg rounded-full text-white cursor-pointer">
+          <div className="hidden sm:block bg-secondary p-2  text-lg rounded-full text-white cursor-pointer">
             <GoHeart />
           </div>
 
