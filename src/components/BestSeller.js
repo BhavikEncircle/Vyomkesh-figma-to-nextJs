@@ -19,7 +19,7 @@ function BestSeller() {
       <div className="flex flex-wrap justify-center overflow-hidden rounded-2xl shadow-sm">
         <div className="w-full md:w-1/3 h-[400px] md:h-[600px] relative">
           <Image
-            src="/Hairmodel.png"
+            src="/HairModel.png"
             alt="Hair Model"
             fill
             className="object-cover"
