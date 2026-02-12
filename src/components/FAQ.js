@@ -45,10 +45,7 @@ function FAQ() {
               </div>
 
               {activeId === index && (
-                <p
-                  className="
-                text-gray-500 mt-3"
-                >
+                <p className="text-gray-500 mt-3">
                   {item.ans || "Not Answered"}
                 </p>
               )}
