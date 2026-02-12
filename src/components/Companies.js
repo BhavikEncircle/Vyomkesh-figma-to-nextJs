@@ -3,7 +3,7 @@ import React from "react";
 import { CompData } from "./data/CompData";
 function Companies() {
   return (
-    <div className="flex animate-marquee w-max gap-5 items-center py-4 rounded-xl ">
+    <div className="flex animate-marquee w-max gap-5 items-center py-4 rounded-xl hover:[animation-play-state:paused] ">
       {CompData.map((comp) => (
         <div key={comp.id} className=" bg-[#F3F6EF] shrink-0">
           <Image

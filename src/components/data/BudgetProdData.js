@@ -2,6 +2,7 @@ export const BudgetProdData = [
   {
     id: 1,
     src: "/PackOf3.png",
+    hoverSrc: "/HoverPackOf3.png",
     title: "Vyomkesh Hair Care Expert Kit (Pack of 3)",
     price: "499",
     oldPrice: "725",
@@ -10,6 +11,7 @@ export const BudgetProdData = [
   {
     id: 2,
     src: "/PackOf2.png",
+    hoverSrc: "/HoverPackOf2.png",
     title: "Vyomkesh Hair Care Expert Kit (Pack of 2)",
     price: "399",
     oldPrice: "599",
@@ -18,6 +20,7 @@ export const BudgetProdData = [
   {
     id: 3,
     src: "/ComboOf2.png",
+    hoverSrc: "/HoverComboOf2.png",
     title: "Vyomkesh Hair Repair Combo (Pack of 2)",
     price: "369",
     oldPrice: "530",

@@ -42,7 +42,7 @@ function Footer() {
               className="border-b bg-transparent border-gray-400 text-gray-500 text-xl w-full lg:w-[450px] pb-2 outline-none"
               placeholder="Your email"
             />
-            <button className="absolute right-0 bottom-2 font-bold uppercase text-lg">
+            <button className="absolute right-0 bottom-2 font-bold uppercase text-lg cursor-pointer">
               Subscribe →
             </button>
           </div>
@@ -58,7 +58,7 @@ function Footer() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5">
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 cursor-pointer">
                 <div className="bg-secondary p-3 rounded-full">
                   <MdOutlinePhoneInTalk className="text-xl text-white" />
                 </div>
@@ -68,7 +68,7 @@ function Footer() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 cursor-pointer">
                 <div className="bg-secondary p-3 rounded-full">
                   <AiOutlineMail className="text-xl text-white" />
                 </div>
@@ -83,7 +83,7 @@ function Footer() {
           <div className="flex justify-between w-full lg:w-[400px] pb-10">
             <div className="flex flex-col gap-5">
               <h4 className="font-cormorant text-2xl font-bold">Information</h4>
-              <ul className="flex flex-col gap-2">
+              <ul className="flex flex-col gap-2 cursor-pointer">
                 <li>About us</li>
                 <li>Privacy Policy</li>
                 <li>Return Policy</li>
@@ -94,7 +94,7 @@ function Footer() {
 
             <div className="flex flex-col gap-5">
               <h4 className="font-cormorant text-2xl font-bold">Quick Links</h4>
-              <ul className="flex flex-col gap-2">
+              <ul className="flex flex-col gap-2 cursor-pointer">
                 <li>My Account</li>
                 <li>My Cart</li>
                 <li>Size Chart</li>

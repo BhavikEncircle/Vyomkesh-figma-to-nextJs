@@ -1,8 +1,10 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { QnA } from "./data/QnAData";
 
 function FAQ() {
+  const [activeId, setActiveId] = useState(0);
   return (
     <section className="flex flex-col lg:flex-row gap-10 px-6 md:px-12 lg:px-34 py-12 md:py-20 bg-[#F3F6EF] items-center lg:items-start">
       <div className="relative w-full lg:w-1/2 aspect-square max-w-2xl overflow-hidden rounded-2xl shadow-sm">
@@ -30,18 +32,24 @@ function FAQ() {
               key={index}
               className="border-t border-black/10 py-5 last:border-b"
             >
-              <div className="flex justify-between items-center gap-4">
+              <div
+                className="flex justify-between items-center gap-4"
+                onClick={() => setActiveId(activeId === index ? null : index)}
+              >
                 <h3 className="text-base md:text-lg font-medium text-[#1a1a1a]">
                   {item.que}
                 </h3>
-                <span className="text-xl text-gray-400 shrink-0">
-                  {item.isOpen ? "—" : "+"}
+                <span className="text-xl text-gray-400 shrink-0 cursor-pointer">
+                  {activeId === index ? "-" : "+"}
                 </span>
               </div>
 
-              {item.isOpen && (
-                <p className="text-gray-500 text-sm leading-relaxed mt-3 max-w-[95%]">
-                  {item.ans}
+              {activeId === index && (
+                <p
+                  className="
+                text-gray-500 mt-3"
+                >
+                  {item.ans || "Not Answered"}
                 </p>
               )}
             </div>

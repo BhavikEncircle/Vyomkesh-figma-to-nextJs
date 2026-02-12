@@ -6,12 +6,18 @@ import { FaArrowRightLong } from "react-icons/fa6";
 function ProductCard({ product }) {
   return (
     <section className="w-full group cursor-pointer">
-      <div className="relative aspect-square w-full overflow-hidden rounded-md bg-[#F9F9F9]">
+      <div className="relative aspect-square w-full overflow-hidden rounded-md bg-[#F9F9F9] group ">
         <Image
           src={product.src}
           alt={product.title}
           fill
-          className="object-cover"
+          className="object-cover group-hover:opacity-0 transition-opacity duration-300"
+        />
+        <Image
+          src={product.hoverSrc}
+          alt={product.title}
+          fill
+          className="object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         />
 
         <button className="absolute top-4 right-4 bg-white p-2 rounded-lg shadow-md hover:bg-gray-50 transition-colors z-10">
