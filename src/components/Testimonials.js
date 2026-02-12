@@ -5,7 +5,7 @@ function Testimonials() {
   return (
     <section className="w-full my-10 bg-white flex flex-col gap-10 py-10 md:py-20 px-6">
       <div className="flex flex-col justify-center items-center tracking-tight">
-        <p className="uppercase text-sm md:text-md text-[#93B178] tracking-widest text-center">
+        <p className="uppercase text-sm md:text-md text-ternary tracking-widest text-center">
           Real results, Happy hair!
         </p>
 

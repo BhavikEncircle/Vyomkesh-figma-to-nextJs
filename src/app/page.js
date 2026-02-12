@@ -7,16 +7,13 @@ import GrowthFormula from "@/components/GrowthFormula";
 import Hero from "@/components/Hero";
 import LatestProducts from "@/components/LatestProducts";
 import Marquee from "@/components/Marquee";
-import Navbar from "@/components/Navbar";
+import Socials from "@/components/Socials";
 import Testimonials from "@/components/Testimonials";
-import Topbar from "@/components/Topbar";
 import React from "react";
 
 function page() {
   return (
     <div className="bg-white">
-      <Topbar />
-      <Navbar />
       <Hero />
       <Marquee />
       <LatestProducts />
@@ -27,6 +24,7 @@ function page() {
       <BestSeller />
       <Testimonials />
       <FAQ />
+      <Socials />
     </div>
   );
 }

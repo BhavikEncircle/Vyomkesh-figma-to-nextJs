@@ -8,7 +8,7 @@ function BestSeller() {
   return (
     <section className="w-full bg-[#F3F6EF] py-10 md:py-20 px-4 md:px-10 lg:px-34">
       <div className="flex flex-col justify-center items-center text-center mb-10">
-        <p className="uppercase text-sm md:text-md text-[#93B178] tracking-widest">
+        <p className="uppercase text-sm md:text-md text-ternary tracking-widest">
           Our highlight
         </p>
         <h2 className="font-cormorant font-bold text-4xl md:text-6xl text-[#1a1a1a] max-w-2xl">

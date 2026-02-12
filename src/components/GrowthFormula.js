@@ -15,7 +15,7 @@ function GrowthFormula() {
       </div>
 
       <div className="flex flex-col flex-1 max-w-4xl justify-center gap-6 items-center tracking-tight text-center">
-        <p className="uppercase text-sm md:text-md text-[#93B178] tracking-[0.2em] font-semibold">
+        <p className="uppercase text-sm md:text-md text-ternary tracking-[0.2em] font-semibold">
           Growth Formula
         </p>
 

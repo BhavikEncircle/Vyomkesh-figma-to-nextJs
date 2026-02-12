@@ -16,7 +16,7 @@ function FAQ() {
 
       <div className="w-full lg:w-1/2 flex flex-col">
         <div className="text-center lg:text-left mb-8">
-          <p className="uppercase text-xs md:text-sm text-[#93B178] tracking-widest mb-2 font-semibold">
+          <p className="uppercase text-xs md:text-sm text-ternary tracking-widest mb-2 font-semibold">
             Answers to your most common questions
           </p>
           <h2 className="font-cormorant font-bold text-4xl md:text-5xl lg:text-6xl leading-tight text-[#1a1a1a]">

@@ -43,7 +43,7 @@ function Comparison() {
       </div>
 
       <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
-        <p className="uppercase text-xs md:text-sm text-[#93B178] tracking-widest mb-3 font-semibold">
+        <p className="uppercase text-xs md:text-sm text-ternary tracking-widest mb-3 font-semibold">
           From weak & dull to healthy & radiant
         </p>
 

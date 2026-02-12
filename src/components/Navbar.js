@@ -9,47 +9,45 @@ import { GoHeart } from "react-icons/go";
 import { useState } from "react";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 
+export default Navbar;
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section className="relative bg-white z-50">
-      <div className="flex justify-between items-center px-6 md:px-34 py-6  font-poppins">
-        <div className="logo">
-          <Image src="/Logo.png" alt="logo" width={250} height={250} />
+    <nav className="relative bg-white z-50 border-b border-gray-100">
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4 md:py-6 font-poppins">
+        <div className="w-40 md:w-56">
+          <Image
+            src="/Logo.png"
+            alt="logo"
+            width={250}
+            height={100}
+            className="object-contain"
+          />
         </div>
 
-        <div className="links hidden md:block">
-          <ul className="flex gap-8 tracking-tight font-medium text-lg">
-            <li>Home</li>
-            <li className="flex items-center gap-2">
-              Shop
-              <IoIosArrowDown />
-            </li>
-            <li>Combos</li>
-            <li>Contact us</li>
-          </ul>
-        </div>
+        <ul className="hidden lg:flex gap-8 tracking-tight font-medium text-lg">
+          <li className="hover:text-secondary cursor-pointer">Home</li>
+          <li className="flex items-center gap-2 hover:text-secondary cursor-pointer">
+            Shop <IoIosArrowDown />
+          </li>
+          <li className="hover:text-secondary cursor-pointer">Combos</li>
+          <li className="hover:text-secondary cursor-pointer">Contact us</li>
+        </ul>
 
-        <div className="icons flex gap-2 items-center">
-          <div className="bg-secondary p-2  text-lg rounded-full text-white cursor-pointer">
+        <div className="flex gap-2 items-center">
+          <div className="bg-secondary p-2 rounded-full text-white cursor-pointer hover:scale-110 transition">
             <CiSearch />
           </div>
-
-          <div className="bg-secondary p-2  text-lg rounded-full text-white cursor-pointer">
+          <div className="bg-secondary p-2 rounded-full text-white cursor-pointer hover:scale-110 transition">
             <RiShoppingBagLine />
           </div>
-
-          <div className="hidden sm:block bg-secondary p-2  text-lg rounded-full text-white cursor-pointer">
+          <div className="hidden sm:block bg-secondary p-2 rounded-full text-white cursor-pointer hover:scale-110 transition">
             <AiOutlineUser />
           </div>
 
-          <div className="hidden sm:block bg-secondary p-2  text-lg rounded-full text-white cursor-pointer">
-            <GoHeart />
-          </div>
-
           <button
-            className="md:hidden text-2xl text-secondary ml-2"
+            className="lg:hidden text-3xl text-secondary ml-2"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <HiX /> : <HiMenuAlt3 />}
@@ -58,8 +56,8 @@ function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="absolute top-full left-0 w-full bg-white border-b border-gray-200 p-8 md:hidden shadow-xl">
-          <ul className="flex flex-col gap-6 font-medium text-lg text-secondary">
+        <div className="absolute top-full left-0 w-full bg-white p-8 lg:hidden shadow-2xl border-t animate-in fade-in slide-in-from-top-4">
+          <ul className="flex flex-col gap-6 font-medium text-xl text-secondary">
             <li onClick={() => setIsOpen(false)}>Home</li>
             <li
               className="flex justify-between items-center"
@@ -67,12 +65,11 @@ function Navbar() {
             >
               Shop <IoIosArrowDown />
             </li>
-            <li onClick={() => setIsOpen(false)}>Combos</li>
-            <li onClick={() => setIsOpen(false)}>Contact us</li>
+            <li>Combos</li>
+            <li>Contact us</li>
           </ul>
         </div>
       )}
-    </section>
+    </nav>
   );
 }
-export default Navbar;
