@@ -3,7 +3,7 @@ import React from "react";
 
 function Hero() {
   return (
-    <section className="relative w-full">
+    <section className="relative w-full mt-22">
       <div className="w-full">
         <Image
           src="/BG.png"

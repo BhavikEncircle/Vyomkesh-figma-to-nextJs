@@ -8,7 +8,7 @@ const HairComparison = () => {
 
   const handleSliderChange = (e) => {
     setSliderPosition(e.target.value);
-  };
+  };  
 
   return (
     <div className="flex flex-col lg:flex-row items-center gap-10 px-6 py-12 bg-white">

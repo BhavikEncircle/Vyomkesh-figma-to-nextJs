@@ -6,15 +6,42 @@ import { CiSearch } from "react-icons/ci";
 import { RiShoppingBagLine } from "react-icons/ri";
 import { AiOutlineUser } from "react-icons/ai";
 import { GoHeart } from "react-icons/go";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 
 export default Navbar;
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [showNav, setShowNav] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
 
+      // prevent tiny jitter
+      if (Math.abs(currentScrollY - lastScrollY) < 10) return;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 80) {
+        // scrolling down
+        setShowNav(false);
+        setIsOpen(false); // close mobile menu if open
+      } else {
+        // scrolling up
+        setShowNav(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
   return (
-    <nav className="relative bg-white z-50 border-b border-gray-100">
+    <nav
+      className={`fixed top-8 sm:top-7 left-0 w-full bg-white z-50 border-b border-gray-100 transition-transform duration-300 ease-in-out ${
+        showNav ? "translate-y-0" : "-translate-y-140"
+      }`}
+    >
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4 md:py-6 font-poppins">
         <div className="w-40 md:w-56">
           <Image

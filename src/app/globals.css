@@ -13,11 +13,16 @@
   --font-cormorant: var(--font-cormorant);
   --font-poppins: var(--font-poppins);
   --color-secondary: #425339;
-  --color-ternary: #93B178;
+  --color-ternary: #93b178;
 
   @keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
   }
 
   --animate-marquee: marquee 20s linear infinite;
@@ -25,7 +30,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ffffff;;
+    --background: #ffffff;
+
     --foreground: #000;
   }
 }
@@ -35,4 +41,14 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   @apply font-poppins;
+
+  .swiper-pagination-bullet {
+    background-color: #6b8e23;
+    opacity: 0.4;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #6b8e23;
+    opacity: 1;
+  }
 }
