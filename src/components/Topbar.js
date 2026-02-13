@@ -4,7 +4,7 @@ import { AiOutlineMail } from "react-icons/ai";
 
 function Topbar() {
   return (
-    <div className="bg-[#F3F6EF] px-6 lg:px-24 py-2 text-[10px] md:text-sm font-poppins">
+    <div className="bg-[#F3F6EF] px-6 lg:px-24 py-2 text-[10px] md:text-sm font-poppins ">
       <div className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-2">
         <p className="uppercase font-medium text-center md:text-left">
           Free shipping on all orders over $100
