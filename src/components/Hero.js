@@ -3,8 +3,8 @@ import React from "react";
 
 function Hero() {
   return (
-    <section className="relative w-full mt-22 lg:h-[80.5vh] md:h-[79vh] sm:h-[83vh]">
-      <div className="w-full">
+    <section className="relative w-full mt-22 h-[calc(100vh-180px)] min-h-[500px]">
+      <div className="absolute inset-0 w-full h-full">
         <Image
           src="/BG.png"
           alt="background"
@@ -22,7 +22,7 @@ function Hero() {
             Nourish Your Hair Naturally
           </p>
 
-          <h1 className="font-cormorant font-bold text-5xl md:text-6xl lg:text-[84px] leading-tight lg:leading-[1.1] text-[#1a1a1a]">
+          <h1 className="font-cormorant font-bold text-5xl md:text-6xl lg:text-[80px] leading-tight lg:leading-[1.1] text-[#1a1a1a]">
             Complete Care with Vyomkesh Shampoo, Oil & Conditioner.
           </h1>
 
