@@ -3,13 +3,14 @@ import React from "react";
 
 function Hero() {
   return (
-    <section className="relative w-full mt-22">
+    <section className="relative w-full mt-22 lg:h-[80.5vh] md:h-[79vh] sm:h-[83vh]">
       <div className="w-full">
         <Image
           src="/BG.png"
           alt="background"
-          width={2000}
-          height={1000}
+          fill
+          // width={2000}
+          // height={1000}
           className="w-full h-auto object-cover object-right lg:object-center"
           priority
         />
@@ -30,7 +31,7 @@ function Hero() {
             100% natural, sulfate-free, and made for Indian hair textures.
           </p>
 
-          <button className="uppercase text-lg w-44 px-4 py-3 mt-5 rounded-lg tracking-wide bg-secondary text-white hover:bg-transparent hover:text-secondary font-bold border-2 border-secondary transition-all">
+          <button className="uppercase text-lg w-44 px-4 py-3 mt-5 rounded-lg tracking-wide bg-secondary text-white cursor-pointer hover:bg-transparent hover:text-secondary font-bold border-2 border-secondary transition-all">
             Shop now →
           </button>
         </div>

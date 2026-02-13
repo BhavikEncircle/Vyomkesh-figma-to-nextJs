@@ -20,8 +20,8 @@ function ProductCard({ product }) {
           className="object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         />
 
-        <button className="absolute top-4 right-4 bg-white p-2 rounded-lg shadow-md hover:bg-gray-50 transition-colors z-10">
-          <GoHeart className="text-xl text-gray-700" />
+        <button className="absolute top-4 right-4 bg-white p-2 rounded-lg shadow-md cursor-pointer hover:bg-gray-50 transition-colors z-10">
+          <GoHeart className="text-xl text-gray-700 cursor-pointer" />
         </button>
       </div>
 
@@ -40,7 +40,7 @@ function ProductCard({ product }) {
           </span>
         </div>
 
-        <button className="w-full bg-[#45543D] text-white py-3 px-6 rounded-lg font-poppins text-lg font-bold flex items-center justify-center gap-3 mt-3 hover:bg-[#35422e] transition-all duration-300">
+        <button className="w-full bg-[#45543D] text-white py-3 px-6 rounded-lg font-poppins text-lg font-bold flex items-center justify-center gap-3 mt-3 cursor-pointer hover:bg-[#35422e] transition-all duration-300">
           Add to cart <FaArrowRightLong className="text-sm" />
         </button>
       </div>

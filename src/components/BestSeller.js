@@ -16,8 +16,8 @@ function BestSeller() {
         </h2>
       </div>
 
-      <div className="flex flex-wrap justify-center overflow-hidden rounded-2xl shadow-sm">
-        <div className="w-full md:w-1/3 h-[400px] md:h-[600px] relative">
+      <div className="flex flex-col md:flex-row justify-center overflow-hidden rounded-2xl shadow-sm">
+        <div className="w-full md:w-1/3 h-[400x] md:h-[900px] lg:h-[600px] relative">
           <Image
             src="/HairModel.png"
             alt="Hair Model"
@@ -26,7 +26,7 @@ function BestSeller() {
           />
         </div>
 
-        <div className="w-full md:w-1/3 bg-white p-8 flex flex-col justify-center items-center relative min-h-[400px]">
+        <div className="w-full md:w-1/3 bg-white p-8 flex flex-col justify-center items-center relative flex-1">
           <div className="absolute top-5 left-5 flex items-center bg-black px-3 py-1 text-white rounded-full text-xs">
             <RxLightningBolt className="mr-1" />
             <span>Best Seller</span>

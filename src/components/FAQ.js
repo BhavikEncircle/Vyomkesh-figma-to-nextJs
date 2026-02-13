@@ -33,7 +33,7 @@ function FAQ() {
               className="border-t border-black/10 py-5 last:border-b"
             >
               <div
-                className="flex justify-between items-center gap-4"
+                className="flex justify-between items-center gap-4 cursor-pointer"
                 onClick={() => setActiveId(activeId === index ? null : index)}
               >
                 <h3 className="text-base md:text-lg font-medium text-[#1a1a1a]">

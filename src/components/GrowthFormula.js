@@ -28,7 +28,7 @@ function GrowthFormula() {
           Enriched with powerful botanicals, our oils deeply nourish your scalp.
         </p>
 
-        <button className="uppercase text-sm md:text-lg w-fit px-8 py-3 mt-4 rounded-lg tracking-widest bg-[#3D4A35] text-white border-2 border-[#3D4A35] transition-all hover:bg-transparent hover:text-[#3D4A35] font-bold">
+        <button className="uppercase text-sm md:text-lg w-fit px-8 py-3 mt-4 rounded-lg tracking-widest bg-[#3D4A35] text-white border-2 border-[#3D4A35] transition-all hover:bg-transparent hover:text-[#3D4A35] font-bold cursor-pointer">
           Shop now →
         </button>
       </div>
