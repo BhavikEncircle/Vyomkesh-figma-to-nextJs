@@ -1,4 +1,4 @@
-"use client"; // Ensure this is at the top
+"use client";
 import BestSeller from "@/components/BestSeller";
 import BudgetCombo from "@/components/BudgetCombo";
 import Certifications from "@/components/Certifications";
@@ -13,10 +13,10 @@ import Testimonials from "@/components/Testimonials";
 import React from "react";
 
 import { useEffect } from "react";
-function page() {
+function Page() {
   useEffect(() => {
     const observerOptions = {
-      threshold: 0.1, // Trigger when 10% of the component is visible
+      threshold: 0.1,
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -27,7 +27,6 @@ function page() {
       });
     }, observerOptions);
 
-    // Grab all elements with the 'reveal' class
     const revealedElements = document.querySelectorAll(".reveal");
     revealedElements.forEach((el) => observer.observe(el));
 
@@ -35,7 +34,6 @@ function page() {
   }, []);
   return (
     <div className="bg-white">
-      {/* Hero usually shouldn't wait for scroll, so we give it 'active' immediately */}
       <div className="reveal active">
         <Hero />
       </div>
@@ -58,7 +56,6 @@ function page() {
         <GrowthFormula />
       </div>
 
-      {/* Add 'reveal' class to any section you want to fade in */}
       <div className="reveal">
         <Comparision />
       </div>
@@ -79,4 +76,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
